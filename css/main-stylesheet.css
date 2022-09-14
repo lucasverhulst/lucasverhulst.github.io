@@ -1,34 +1,37 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 main {
-  position: absolute;
+  position: relative;
+  height: 100%;
+  width: 100%;
   top: 50px;
 }
 
 header {
-    z-index: 1;
-    position: fixed;
-    background: #13293D;
-    color: white;
-    height: 50px;
-    width: 100%;
-    left: 0;
-    top: 0;
+  z-index: 1;
+  position: fixed;
+  background: #13293D;
+  color: white;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 header span {
-    padding-left: 10px;
-    font-size: 35px;
-    cursor: pointer;
-    color: #247BA0;
-    transition: 0.3s;
+  padding-left: 10px;
+  font-size: 35px;
+  cursor: pointer;
+  color: #247BA0;
+  transition: 0.3s;
 }
 
 header span:hover {
-    color: #E8F1F2;
-    transition: 0.3s;
+  color: #E8F1F2;
+  transition: 0.3s;
 }
 
 .sidenav {
@@ -65,12 +68,94 @@ header span:hover {
   margin-left: 50px;
 }
 
-table {
-  margin: 5%;
+aside {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #13293D;
+  width: 200px;
+}
+
+aside > ul > li {
+  padding: 5px;
+}
+
+aside > ul > li > a {
+  text-decoration: none;
+  color: #E8F1F2;
+  font-size: 17px;
+}
+
+#hzlogo {
+  position: relative;
+  align-self: center;
+  padding-bottom: 100px;
+}
+
+#hzlogo > a > img {
+  position: relative;
+  width: 100px;
   border-radius: 10px;
 }
 
-.blok {
+#study {
+  margin-left: 20px;
+}
+
+#profile {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  padding:	2%;
+}
+
+#profile > article {
+  display: flex;
+  flex-direction: column;
+}
+
+#profile > article > ul {
+  align-self: flex-start;
+  padding-left: 15px;
+}
+
+#pasfoto {
+  border: 7px solid #247BA0;
+  border-radius: 5px;
+  height: 297px;
+}
+
+#hobbys {
+  display: flex;
+  padding: 2%;
+}
+
+#hobbys > article {
+  display: flex;
+  flex-direction: column;
+}
+
+#hobbys > article > section {
+  width: 60%;
+}
+
+#hobbys > article > div > img {
+  width: 60%;
+}
+
+#network > img{
+  height: 600px;
+  float: right;
+  position: relative;
+}
+
+table {
+  margin: 5%;
+  border-radius: 10px;
 }
 
 th, td {
@@ -81,3 +166,35 @@ table, tr, th, td {
   border: 3px solid black;
   position: relative;
 } 
+
+#faq-div {
+  height: auto;
+  width: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.faq{
+  position: relative;
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.faq > strong {
+  margin-left: 10px;
+}
+
+.faq > a {
+  transform: rotate(0deg);
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.faq > a:hover {
+  cursor: pointer;
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
