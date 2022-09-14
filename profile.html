@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="/css/main-stylesheet.css">
+    <script src="js/sidebar.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,18 +23,44 @@
       <span onclick="openNav()">&#9776;</span>
     </header>
 
-    <h1>profile</h1>
-
     <main>
-      <ul>
-        <li>naam: lucas verhulst</li>
-        <li>leeftijd: 18</li>
-        <li>woonplaats: Geersdijk</li>
-        <li>vooropleiding: Havo, N&G</li>
-      </ul>
-      <article>
+      <div id="profile">
+        <article>
+          <h1>profile</h1>
+          <ul>
+            <li>naam: Lucas Verhulst</li>
+            <li>leeftijd: 18 Jaar</li>
+            <li>woonplaats: Geersdijk</li>
+            <li>vooropleiding: Havo, Natuur & Gezondheid</li>
+          </ul>
+        </article>
+        <div><img id="pasfoto" src="sources/pasfoto.png" alt="lucas"></div>
+      </div>
 
-      </article>
+      <div id="hobbys">
+        <article>
+          <h2>Mijn hobby's</h2>
+          <section>
+            <p>
+              In mijn vrije tijd doe ik veel met computers, Om specafiek te zijn doe ik veel met netwerken
+              en servers. ik heb meerdere servers in mijn kamer die ik gebruik om te leren. hiernaast staat
+              een netwerk diagram van mijn oude netwerk. (ik ben op het moment bezig met mijn netwerk, dus heb 
+              geen actueel diagram)
+            </p>
+          </section>
+          <section>
+            <p>
+              Ook is een van mijn hobby's is 3d tekenen/printen. Op de middelbare school ben ik begonnen met het
+              3d tekenen in solid edge en sketchup. nu ik van de middelbare af ben heb ik geen toegang meer tot 
+              de software van school, dus ik ben fusion 360 aan het leren te gebruiken. ik heb ook een 3d printer 
+              waarop ik soms de dingen die ik teken uitprint. hieronder staat een foto van de tekening die ik gemaakt
+              heb van mijn kamer. deze tekening is gemaakt in sketchup.
+            </p>
+          </section>
+          <div><img src="sources/kamersketchup.png" alt="3d tekening van mijn kamer"></div>
+        </article>
+        <div id="network"><img src="sources/network.png" alt="network"></div>
+      </div>
     </main>
 
   </body>
