@@ -243,7 +243,6 @@ table, tr, th, td {
 .faq{
   position: relative;
   font-size: 20px;
-  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
