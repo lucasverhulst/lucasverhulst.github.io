@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color: #E8F1F2;
 }
 
 main {
@@ -104,6 +105,22 @@ aside > ul > li > a {
 
 #study {
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 200px;
+}
+
+#study > article > section > p {
+  max-width: 400px;
+}
+
+#drone {
+  padding: 50px 0px 50px 0px;
+}
+
+#drone > img {
+  width: 100%;
 }
 
 #profile {
@@ -157,6 +174,12 @@ aside > ul > li > a {
   height: 600px;
   float: right;
   position: relative;
+}
+
+#table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 table {
