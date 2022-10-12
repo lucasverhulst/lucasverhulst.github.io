@@ -155,7 +155,8 @@ aside > ul > li > a {
 
 #hobbys > article {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
 }
 
 #hobbys > article > section {
@@ -166,14 +167,14 @@ aside > ul > li > a {
   padding-bottom: 100px;
 }
 
-#hobbys > article > div > img {
-  width: 80%;
+#hobbys > article > div {
+  display: flex;
+  flex-direction: column;
 }
 
-#network > img{
-  height: 600px;
-  float: right;
-  position: relative;
+#hobbys > article > div > img {
+  width: 80%;
+  max-height: 680px;
 }
 
 #table {
